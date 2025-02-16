@@ -1,4 +1,4 @@
-#!/bin/bash
+chmod +x VarAC_for_ETC.sh #!/bin/bash
 
 echo "Installing VarAC..."
 
