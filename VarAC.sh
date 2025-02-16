@@ -54,7 +54,7 @@ sudo nano /usr/local/share/applications/varac.desktop
 Name=VarAC
 GenericName=VarAC
 Comment=Chat Program
-Exec=/usr/bin/wine /home/km4ack/.wine/drive_c/VarAC/VarAC.exe
+Exec=/usr/bin/wine $HOME/.wine/drive_c/VarAC/VarAC.exe
 Icon=
 Terminal=false
 Type=Application
