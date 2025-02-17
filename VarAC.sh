@@ -46,13 +46,13 @@ cd ~/.wine/drive_c/VarAC
 #wine VarAC.exe
 
 #Install VARA HF Modem
-echo "Installing VARA HF..."
+#echo "Installing VARA HF..."
 
-mkdir ~/.wine/drive_c/VARA_HF
-cd ~/vara-scripts/
-unzip VARA_HF_v4.8.9.zip -d $HOME/.wine/drive_c/VARA_HF
-cd ~/.wine/drive_c/VARA_HF
-wine 'VARA setup (Run as Administrator).exe'
+#mkdir ~/.wine/drive_c/VARA_HF
+#cd ~/vara-scripts/
+#unzip VARA_HF_v4.8.9.zip -d $HOME/.wine/drive_c/VARA_HF
+#cd ~/.wine/drive_c/VARA_HF
+#wine 'VARA setup (Run as Administrator).exe'
 
 #Create Menu Shortcut for VarAC
 #echo "Creating shortcut..."
