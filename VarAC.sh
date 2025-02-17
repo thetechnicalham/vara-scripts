@@ -50,7 +50,7 @@ echo "Installing VARA HF..."
 
 mkdir ~/.wine/drive_c/VARA_HF
 cd ~/vara-scripts/
-unzip VARA HF v4.8.9.zip -d $HOME/.wine/drive_c/VARA_HF
+unzip VARA_HF_v4.8.9.zip -d $HOME/.wine/drive_c/VARA_HF
 cd ~/.wine/drive_c/VARA_HF
 wine VARA.exe
 
