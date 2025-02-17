@@ -24,9 +24,9 @@ Type=Application
 Categories=Network;HamRadio;
 
 
-echo """Fix Menu Entry for VARA/VARA FM, change 'wine-stable' to 'wine' using in the following files:
-~/.local/share/applications/wine/Programs/VARA/VARA.desktop
-~/.local/share/applications/wine/Programs/VARA\ FM/VARA\ FM.desktop"""
+#echo """Fix Menu Entry for VARA/VARA FM, change 'wine-stable' to 'wine' using in the following files:
+#~/.local/share/applications/wine/Programs/VARA/VARA.desktop
+#~/.local/share/applications/wine/Programs/VARA\ FM/VARA\ FM.desktop"""
 
 echo "VarAC installed successfully!"
 #wine ~/.wine/drive_c/VarAC/VarAC.exe
