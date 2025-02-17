@@ -42,7 +42,7 @@ echo "Installing VarAC..."
 
 mkdir ~/.wine/drive_c/VarAC
 cd ~/Downloads/
-unzip VarAC_V10_2_1.zip -d $HOME/.wine/drive_c/VarAC
+unzip VarAC_V10_4_3.zip -d $HOME/.wine/drive_c/VarAC
 cd ~/.wine/drive_c/VarAC
 wine VarAC.exe
 
