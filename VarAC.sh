@@ -41,7 +41,7 @@ echo "Installing VarAC..."
 #Download & unzip VarAC to .wine directory. Note: Substitute <VarAC_dir> with the actual zip file name. (https://www.varac-hamradio.com/downloadlinux) current version 10_2_1
 
 mkdir ~/.wine/drive_c/VarAC
-cd ~/Downloads/
+cd ~/vara-scripts/
 unzip VarAC_V10_4_3.zip -d $HOME/.wine/drive_c/VarAC
 cd ~/.wine/drive_c/VarAC
 wine VarAC.exe
