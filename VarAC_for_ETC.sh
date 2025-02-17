@@ -4,7 +4,7 @@ echo "Installing VarAC..."
 
 # Define Variables
 VARAC_VERSION="10_2_1"
-VARAC_ZIP="VarAC_V${VARAC_VERSION}.zip"
+VARAC_ZIP="VarAC_V${VARAC_VERSION}"
 VARAC_URL="https://www.varac-hamradio.com/downloadlinux"  # Update if necessary
 INSTALL_DIR="$HOME/.wine/drive_c/VarAC"
 DOWNLOAD_DIR="$HOME/Downloads"
