@@ -38,7 +38,6 @@ WINEARCH=win32 WINEPREFIX=$HOME/.wine/ winetricks sound=alsa
 
 #Install VarAC
 echo "Installing VarAC..."
-#Download & unzip VarAC to .wine directory. Note: Substitute <VarAC_dir> with the actual zip file name. (https://www.varac-hamradio.com/downloadlinux) current version 10_2_1
 
 mkdir ~/.wine/drive_c/VarAC
 cd ~/vara-scripts/
@@ -46,23 +45,32 @@ unzip VarAC_V10_4_3.zip -d $HOME/.wine/drive_c/VarAC
 cd ~/.wine/drive_c/VarAC
 wine VarAC.exe
 
+#Install VARA HF Modem
+echo "Installing VARA HF..."
+
+mkdir ~/.wine/drive_c/VARA_HF
+cd ~/vara-scripts/
+unzip VARA HF v4.8.9.zip -d $HOME/.wine/drive_c/VARA_HF
+cd ~/.wine/drive_c/VARA_HF
+wine VARA.exe
+
 #Create Menu Shortcut for VarAC
-echo "Creating shortcut..."
-Echo """Create a shortcut using this line:
+#echo "Creating shortcut..."
+#Echo """Create a shortcut using this line:
 
-sudo nano /usr/local/share/applications/varac.desktop
+#sudo nano /usr/local/share/applications/varac.desktop
 
-Input this data into file:
+#Input this data into file:
 
-[Desktop Entry]
-Name=VarAC
-GenericName=VarAC
-Comment=Chat Program
-Exec=/usr/bin/wine $HOME/.wine/drive_c/VarAC/VarAC.exe
-Icon=
-Terminal=false
-Type=Application
-Categories=Network;HamRadio;"""
+#[Desktop Entry]
+#Name=VarAC
+#GenericName=VarAC
+#Comment=Chat Program
+#Exec=/usr/bin/wine $HOME/.wine/drive_c/VarAC/VarAC.exe
+#Icon=
+#Terminal=false
+#Type=Application
+#Categories=Network;HamRadio;"""
 
 
 echo """Fix Menu Entry for VARA/VARA FM, change 'wine-stable' to 'wine' using in the following files:
@@ -70,5 +78,4 @@ echo """Fix Menu Entry for VARA/VARA FM, change 'wine-stable' to 'wine' using in
 ~/.local/share/applications/wine/Programs/VARA\ FM/VARA\ FM.desktop"""
 
 echo "VarAC installed successfully!"
-#wine ~/.wine/drive_c/VarAC/VarAC.exe
 
