@@ -5,6 +5,8 @@
 # Updated    : 19 February 2025
 # Purpose    : Install Wine and Winetricks
 
+cd
+
 #Update sources
 echo "Updating sources..."
 sudo apt update
@@ -37,4 +39,6 @@ WINEARCH=win32 WINEPREFIX=$HOME/.wine/ winetricks -q vcrun2015
 #dotnet461 takes a LONG time to install
 WINEARCH=win32 WINEPREFIX=$HOME/.wine/ winetricks -q dotnet461
 WINEARCH=win32 WINEPREFIX=$HOME/.wine/ winetricks sound=alsa
+
+cd ~/vara-scripts/scripts
 

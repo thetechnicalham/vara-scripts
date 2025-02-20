@@ -13,7 +13,9 @@ exitIfNotRoot
 ./install-vara-hf.sh
 ./install-vara-fm.sh
 ./install-varac.sh
+./install-winlink.sh
 
 dialog ==textbox post-install-steps.txt 115 74
 
 cp ~/vara-scripts/scripts/post-install-steps.txt ~/Desktop
+

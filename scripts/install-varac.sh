@@ -16,7 +16,7 @@ echo "Installing VarAC..."
 mkdir ~/.wine/drive_c/VarAC
 cd ~/vara-scripts/scripts
 unzip VarAC_V10_4_3.zip -d $HOME/.wine/drive_c/VarAC
-cd
+cd ~/vara-scripts/scripts
 #wine ~/.wine/drive_c/VarAC/VarAC.exe
 
 #Create Menu Shortcut for VarAC

@@ -19,7 +19,7 @@ cd ~/vara-scripts/scripts
 unzip VARA_FM_v4.3.8.zip -d $HOME/.wine/drive_c/VARA_FM
 cd ~/.wine/drive_c/VARA_FM
 wine 'VARA FM setup (Run as Administrator).exe'
-cd
+cd ~/vara-scripts/scripts
 
 echo "VARA FM installed successfully!"
 
