@@ -11,17 +11,15 @@ cd
 echo "Updating sources..."
 sudo apt update
 
-WIN32_DIR="${HOME}/.win32"
-
-#Install Wine
+#Install wine
 echo "Installing wine..."
 
-# Check for an existing i386 architecture
-ARCH_OUT=$(dpkg --print-foreign-architectures | grep i386)
-[ $? -ne 0 ] && dpkg --add-architecture i386
+sudo add-apt-repository ppa:ubuntu-wine/ppa
+sudo apt-get update
+sudo apt-get install wine wine10.1
 
 apt install \
-  wine \
+  #wine \
   winetricks \
   exe-thumbnailer \
   -y
