@@ -9,6 +9,8 @@
 
 exitIfNotRoot
 
+./install-branding.sh
+./install-browser.sh
 ./install-wine.sh
 ./install-vara-hf.sh
 ./install-vara-fm.sh
