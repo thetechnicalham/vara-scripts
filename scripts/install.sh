@@ -2,20 +2,20 @@
 #
 # Author     : Anthony Woodward
 # Date       : 19 February 2025
-# Updated    : 19 February 2025
+# Updated    : 21 February 2025
 # Purpose    : Create master install command
 
 ./functions.sh
 
 exitIfNotRoot
 
-./install-branding.sh
-./install-browser.sh
+sudo -u $SUDO_USER ./install-branding.sh
+#./install-browser.sh
 ./install-wine.sh
-./install-vara-hf.sh
-./install-vara-fm.sh
-./install-varac.sh
-./install-winlink.sh
+sudo -u $SUDO_USER ./install-vara-hf.sh
+sudo -u $SUDO_USER ./install-vara-fm.sh
+sudo -u $SUDO_USER ./install-varac.sh
+sudo -u $SUDO_USER ./install-winlink.sh
 
 dialog ==textbox post-install-steps.txt 115 74
 

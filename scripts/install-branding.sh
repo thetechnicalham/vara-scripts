@@ -9,7 +9,6 @@
 #Install branding
 echo "Installing branding..."
 
-apt install plymouth-themes -y
 cp ~/vara-scripts/logo/ham-scripts_tth_logo.png ~/Pictures
 gsettings set org.gnome.desktop.background picture-uri file:///~/Pictures/ham-scripts_tth_logo.png
 

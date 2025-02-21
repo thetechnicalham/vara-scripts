@@ -2,7 +2,7 @@
 #
 # Author     : Anthony Woodward
 # Date       : 19 February 2025
-# Updated    : 19 February 2025
+# Updated    : 21 February 2025
 # Purpose    : Install VarAC
 
 
@@ -16,6 +16,8 @@ echo "Installing VarAC..."
 mkdir ~/.wine/drive_c/VarAC
 cd ~/vara-scripts/scripts
 unzip VarAC_V10_4_3.zip -d $HOME/.wine/drive_c/VarAC
+cd ../overlay/shortcut/
+cp varac.desktop ~/.local/share/applications/
 cd ~/vara-scripts/scripts
 #wine ~/.wine/drive_c/VarAC/VarAC.exe
 
